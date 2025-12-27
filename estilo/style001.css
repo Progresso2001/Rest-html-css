@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+
+:root{
+    --var0:'Arial', sans-serif;
+    --var1:'Monsieur La Doulaise';
+    --var2:'Walter Turncoat';
+    --var3:'Story Script';
+    --var4: 'Pinyon Script';
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: "Monsieur La Doulaise", cursive;
+    background: url('../imagens/look_2.jpg') no-repeat left center;
+    background-attachment: fixed;
+    
+
+}
+header{
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+
+}
+.logo h1{
+    margin: 20px;
+    padding: 20px;
+    font-size: 3rem;
+    font-variant:small-caps;
+    font-family: var(--var4);
+    font-weight: bold;
+}
+.logo h1 > span{
+    color: aqua;
+}
+.logo img{
+    width: 60px;
+    height:60px;
+    padding: 50px;
+    border-radius: 50%;
+}
+nav{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+.nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.nav li a{
+  display: block;
+  padding: 8px 16px;
+  background-color:brown;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: none;
+  transition: 0.3s;
+  top: 0;
+  right: 0;
+  font-family: var(--va4);
+  margin: 20px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.nav li a:hover{
+    background-color:rgba(165, 42, 42, 0.567);
+    transition: 0.3s;
+}
+
+div{
+    display: inline;
+    justify-content: right;
+    align-items: normal;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.027);
+    color: white;
+    border-radius: 20px;
+    box-shadow:rgba(0, 0, 0, 0.036) transparent;
+    width: 40%;
+    height: 50%;
+    margin: 20px;
+    padding: 20px;
+    
+}
+.subtitulo {
+    align-items: center;
+    text-indent: 10px;
+    
+}
+.subtitulo h2{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2em;
+    font-family: var(--var4);
+    margin: 30px;
+    padding: 30px;
+}
+.subtitulo p{
+    text-align: center;
+    font-size: 1em;
+}
+
+.subtitulo h2 p{
+    margin-bottom: 10%;
+}
+

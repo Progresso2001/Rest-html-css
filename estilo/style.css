@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+
+body{
+    font-family: "Monsieur La Doulaise", cursive;
+    margin: 20px;
+    padding: 20px;
+    font-size: 1.5em;
+    background-color: black;
+    color: white;
+    background: url('../imagens/comida.jpg') no-repeat left center;
+    background-attachment: fixed;
+
+}
+.logo{
+    width: 40%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+/* .logo img{
+    width: 50px;
+    flex-direction: row;
+    justify-content: space-around;
+  
+    padding: 20px;
+} */
+.logo h1{
+    
+    font-variant: small-caps;
+    display: flex;
+    color: white;
+    font-size: 2em;
+    margin: 20px;
+ }
+ .logo span{
+    color:rgb(0, 255, 255);
+    font-size: 1em;
+ }
+ .menus{
+    display: flex;
+    justify-content: space-between;
+
+ }
+ nav{
+    padding: 10px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+ }
+.menus nav{
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    padding: 10px 20px;
+    margin: 20px;
+ 
+}
+.menus nav a{
+    display: flexbox;
+    color: black;
+    text-decoration:none;
+    padding: 15px;
+    transition: background 0.3s;
+    border: 1 solid black;
+    border-radius: 20px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+}
+.menus nav a:hover{
+    background-color: brown;
+    transition: all 1s;
+}
+section{
+    height: 100vh;
+    font-size:2rem;
+}
+.bemvindo{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    min-height: 100vh;
+   text-align: center;
+   padding: 20px;
+   gap: 20px;
+   text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+   
+}
+.bemvindo p{
+    color:black;
+    font-size: 2em;
+    font-variant: small-caps;
+}
+@media screen and (max-width:768px){
+    .logo{
+        margin: auto;
+
+    }
+    .menus{
+        font-size: 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .menus nav a{
+        flex-direction: column;
+    }
+    
+}
+
+
+
