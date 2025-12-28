@@ -135,3 +135,47 @@ section footer p:hover{
     transform: translateX(-10px);
     transition: 0.3s ease-in-out;
 }
+
+/* Media Queries para Mobile */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logotipo {
+        justify-content: center !important;
+        order: 2;
+    }
+    
+    .menu {
+        order: 1;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+    .menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .informacoes {
+        padding: 0 15px;
+    }
+    
+    body {
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu li a {
+        padding: 10px 15px;
+        font-size: 0.95em;
+    }
+    
+    .logotipo img {
+        width: 60px;
+    }
+}
